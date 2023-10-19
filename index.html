@@ -1,19 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Git Tutorial</title>
-    <style>
-      .ketengah {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-      }
-    </style>
+    <link rel="stylesheet" type href="style.css" />
   </head>
   <body>
-    <div class="ketengah">
-      <p>Halo Git</p>
+    <div class="container">
+      <div class="content">
+        <p>Git tutorial</p>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Fade in the content
+        $(".content").fadeIn(3000);
+
+        // Add animation to the button
+        $("button").hover(
+          function () {
+            $(this).css("background", "#2980b9");
+          },
+          function () {
+            $(this).css("background", "#3498db");
+          }
+        );
+      });
+    </script>
   </body>
 </html>
